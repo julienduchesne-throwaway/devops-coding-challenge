@@ -1,8 +1,10 @@
+import boto3
+
 class ObjectLister:
     s3_client = None
 
-    def __init__(self, s3_client):
-        self.s3_client = s3_client
+    def __init__(self, s3_client=None):
+        self.s3_client = s3_client or boto3.client('s3')
 
     def list_objects(self, buckets, prefix, types):
         objects = []

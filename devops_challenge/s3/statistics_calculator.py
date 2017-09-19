@@ -1,13 +1,15 @@
 from collections import OrderedDict
 from devops_challenge.utils import constants
+from .bucket_lister import BucketLister
+from .object_lister import ObjectLister
 
 class StatisticsCalculator:
     bucket_lister = None
     object_lister = None
 
-    def __init__(self, bucket_lister, object_lister):
-        self.bucket_lister = bucket_lister
-        self.object_lister = object_lister
+    def __init__(self, bucket_lister=None, object_lister=None):
+        self.bucket_lister = bucket_lister or BucketLister()
+        self.object_lister = object_lister or ObjectLister()
 
     def calculate_statistics(self, args):
         buckets = self.bucket_lister.list_buckets(args.buckets, args.regions)

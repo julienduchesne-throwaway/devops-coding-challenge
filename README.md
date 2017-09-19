@@ -1,6 +1,9 @@
 # Coveo DevOps Challenge
 
 ### To run
+Download all required packages with  
+* pip install -r requirements.txt  
+
 In the root folder, run either
 * python3 ./main.py [params] [-h]
 * python -m unittest discover -s tests
