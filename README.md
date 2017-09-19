@@ -1,4 +1,10 @@
 # Coveo DevOps Challenge
+
+### To run
+In the root folder, run either
+* python3 ./main.py [params] [-h]
+* python -m unittest discover -s tests
+
 ### The Challenge
 Your challenge, should you choose to accept it, is to develop an AWS S3 storage analysis tool. To test your tool, you will have to create a free [Amazon](http://aws.amazon.com/en/free/) account (if you don't already have one).
 ### Specifications
