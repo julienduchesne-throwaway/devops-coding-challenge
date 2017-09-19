@@ -8,6 +8,15 @@ In the root folder, run either
 * python3 ./main.py [params] [-h]
 * python -m unittest discover -s tests
 
+Params (-h for accepted values)
+* -u, --unit: Unit for object size
+* -r, --regions: List of regions to fetch
+* -t, --storage-types: List of storage types to fetch
+* -b, --buckets: List of regex expressions for accepted bucket names
+* -p, --key-prefix: Object prefix (no regex)
+* -g, --groups: List of groups for which calculate stats (ex. by bucket or by region)
+* -rf, --return-format: Format in which the result will be printed (json, csv or table)
+
 ### The Challenge
 Your challenge, should you choose to accept it, is to develop an AWS S3 storage analysis tool. To test your tool, you will have to create a free [Amazon](http://aws.amazon.com/en/free/) account (if you don't already have one).
 ### Specifications
